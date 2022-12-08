@@ -1,0 +1,11 @@
+//? ts global
+npm install -g typescript
+
+//? complila o arquivo ts pra js
+tsc index.ts
+
+//? gerando arquivo de config
+tsc --init
+
+//? compila o arquivo ts automaticamente, sempre que salvar
+tsc -w
