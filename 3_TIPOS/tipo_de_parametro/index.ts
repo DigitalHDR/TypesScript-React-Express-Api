@@ -1,5 +1,5 @@
-function soma(a: number, b: number) {
-  console.log(a + b)
-}
+// function soma(a: number, b: number) {
+//   console.log(a + b)
+// }
 
-soma(2, 4)
+// soma(2, 4)
