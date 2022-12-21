@@ -8,22 +8,11 @@
 //* ou seja se pretendemos mudar como o tipo se conforma,
 //* devemos escolher a interface
 //* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// interface Person {
-//     name: string
-// }
-// interface Person {
-//     age: number
-// }
-// const somePerson: Person = {
-//     name: 'lucas',
-//     age: 34
-// }
-// console.log(somePerson)
-//! {name: 'lucas', age: 34}
-//todo =====================================================
-// type personType = {
-//     name: string
-// }
+const somePerson = {
+    name: 'lucas',
+    age: 34
+};
+console.log(somePerson);
 // type personType = {
 // age: number
 // }

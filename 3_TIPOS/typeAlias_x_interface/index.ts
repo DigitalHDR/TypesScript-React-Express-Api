@@ -8,28 +8,28 @@
 //* devemos escolher a interface
 //* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-interface Person {
-    name: string
-}
+// interface Person {
+//     name: string
+// }
 
-interface Person {
-    age: number
-}
+// interface Person {
+//     age: number
+// }
 
-const somePerson: Person = {
-    name: 'lucas',
-    age: 34
-}
+// const somePerson: Person = {
+//     name: 'lucas',
+//     age: 34
+// }
 
-console.log(somePerson)
+// console.log(somePerson)
 //! {name: 'lucas', age: 34}
 
 //todo =====================================================
 
 
-type personType = {
-    name: string
-}
+// type personType = {
+//     name: string
+// }
 
 // type personType = {
     // age: number
