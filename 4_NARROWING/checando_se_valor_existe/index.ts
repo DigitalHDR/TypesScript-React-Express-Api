@@ -7,29 +7,29 @@
 //* , é uma outra estratégia bem utilizada
 //* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function operations(arr: number[], operation?: string | undefined) {
-  if (operation) {
+// function operations(arr: number[], operation?: string | undefined) {
+//   if (operation) {
 
-    if (operation === 'sum') {
-      const sum = arr.reduce((i, total) => i + total)
-      console.log(sum)
+//     if (operation === 'sum') {
+//       const sum = arr.reduce((i, total) => i + total)
+//       console.log(sum)
 
-    } else if (operation === 'multiply') {
-      const multiply = arr.reduce((i, total) => i * total)
-      console.log(multiply)
+//     } else if (operation === 'multiply') {
+//       const multiply = arr.reduce((i, total) => i * total)
+//       console.log(multiply)
 
-    }
+//     }
     
-  } else {
-    console.log('Por favor, defina uma operação')
-  }
-}
+//   } else {
+//     console.log('Por favor, defina uma operação')
+//   }
+// }
 
-operations([1, 2, 3])
-//!Por favor, defina uma operação
+// operations([1, 2, 3])
+// //!Por favor, defina uma operação
 
-operations([1, 2, 3], 'sum')
-//! 6
+// operations([1, 2, 3], 'sum')
+// //! 6
 
-operations([2, 4, 8], 'multiply')
-//! 64
+// operations([2, 4, 8], 'multiply')
+// //! 64
