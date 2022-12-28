@@ -5,42 +5,42 @@
 //* e ele vai servir até para as nossas próprias classes
 //* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-class User {
-  name
-  constructor(name: string) {
-    this.name = name
-  }
-}
+// class User {
+//   name
+//   constructor(name: string) {
+//     this.name = name
+//   }
+// }
 
-class SuperUser extends User {
-  constructor(name: string) {
-    super(name)
-  }
-}
+// class SuperUser extends User {
+//   constructor(name: string) {
+//     super(name)
+//   }
+// }
 
-const jhon = new User('Jhon')
-const paul = new SuperUser('Paul')
+// const jhon = new User('Jhon')
+// const paul = new SuperUser('Paul')
 
-console.log(jhon)
-// User
-// name:"Jhon"
-// [[Prototype]]:Object
+// console.log(jhon)
+// // User
+// // name:"Jhon"
+// // [[Prototype]]:Object
 
-console.log(paul)
-// SuperUser
-// name:"Paul"
-// [[Prototype]]:User
+// console.log(paul)
+// // SuperUser
+// // name:"Paul"
+// // [[Prototype]]:User
 
-function userGreeting(user: object) {
-    if(user instanceof SuperUser) {
-        console.log(`Olá ${user.name}, deseja ver os dados do sistema?`)
-    }else if(user instanceof User) {
-        console.log(`Olá ${user.name}.`)
-    }
-}
+// function userGreeting(user: object) {
+//     if(user instanceof SuperUser) {
+//         console.log(`Olá ${user.name}, deseja ver os dados do sistema?`)
+//     }else if(user instanceof User) {
+//         console.log(`Olá ${user.name}.`)
+//     }
+// }
 
-userGreeting(jhon)
-//! Olá Jhon.
+// userGreeting(jhon)
+// //! Olá Jhon.
 
-userGreeting(paul)
-//! Olá Paul, deseja ver os dados do sistema?
+// userGreeting(paul)
+// //! Olá Paul, deseja ver os dados do sistema?
