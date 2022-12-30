@@ -5,19 +5,19 @@
 //* e também o tipo de retorno da mesma
 //* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function greeting(name: string): string {
-  return `Olá ${name}`
-}
+// function greeting(name: string): string {
+//   return `Olá ${name}`
+// }
 
-function preGreeting(fCallback: (name: string) => string, userName: string) {
-    console.log(`preparando a função`)
+// function preGreeting(fCallback: (name: string) => string, userName: string) {
+//     console.log(`preparando a função`)
 
-    const greet = fCallback(userName)
+//     const greet = fCallback(userName)
 
-    console.log(greet)
-}
+//     console.log(greet)
+// }
 
 
-preGreeting(greeting, `Lucas`)
-// preparando a função
-// Olá Lucas
+// preGreeting(greeting, `Lucas`)
+// // preparando a função
+// // Olá Lucas
