@@ -6,26 +6,26 @@
 //* os generics é uma convenção
 //* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function firstElement<T>(arr: T[]): T {
-  return arr[0]
-}
+// function firstElement<T>(arr: T[]): T {
+//   return arr[0]
+// }
 
-console.log(firstElement([1, 2, 3]))
-console.log(firstElement(['a', 'b', 'c']))
+// console.log(firstElement([1, 2, 3]))
+// console.log(firstElement(['a', 'b', 'c']))
 
-//todo =====================================================
+// //todo =====================================================
 
-function mergeObjects<U, T>(obj1: U, obj2: T) {
-  return {
-    ...obj1,
-    ...obj2,
-  }
-}
+// function mergeObjects<U, T>(obj1: U, obj2: T) {
+//   return {
+//     ...obj1,
+//     ...obj2,
+//   }
+// }
 
-const newObject = mergeObjects(
-  { name: 'Lucas' },
-  { idade: 30, job: 'programador' }
-)
+// const newObject = mergeObjects(
+//   { name: 'Lucas' },
+//   { idade: 30, job: 'programador' }
+// )
 
-console.log(newObject)
-// {name: 'Lucas', idade: 30, job: 'programador'}
+// console.log(newObject)
+// // {name: 'Lucas', idade: 30, job: 'programador'}
