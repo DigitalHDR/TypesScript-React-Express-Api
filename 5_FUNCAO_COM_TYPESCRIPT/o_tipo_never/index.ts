@@ -5,9 +5,9 @@
 //* um exemplo: retorno de erros
 //* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function showErroMessage(msg: string): never {
-  throw new Error(msg)
-}
+// function showErroMessage(msg: string): never {
+//   throw new Error(msg)
+// }
 
-showErroMessage('algum erro aconteceu')
-//! Uncaught Error: algum erro aconteceu
+// showErroMessage('algum erro aconteceu')
+// //! Uncaught Error: algum erro aconteceu
