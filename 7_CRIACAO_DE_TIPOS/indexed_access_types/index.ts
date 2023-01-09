@@ -6,29 +6,30 @@
 //* locais como funções
 //* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-// type Truck = { km: number; kg: number; description: string }
+type Truck = { km: number; kg: number; description: string }
 
-// type km = Truck['km']
+type km = Truck['km']
 
-// const newTruck: Truck = {
-//   km: 10000,
-//   kg: 5000,
-//   description: 'Caminhão para pouco carga',
-// }
+const newTruck: Truck = {
+  km: 10000,
+  kg: 5000,
+  description: 'Caminhão para pouco carga',
+}
 
-// function showKm(km: km) {
-//   console.log(`O veículo tem a Km de:${km}`)
-// }
+function showKm(km: km) {
+  console.log(`O veículo tem a Km de:${km}`)
+}
 
-// showKm(newTruck.km)
-// //! O veículo tem a Km de:10000
+showKm(newTruck.km)
+//! O veículo tem a Km de:10000
 
-// //todo =====================================================
+//todo =====================================================
 
-// const newCar = {
-//   km: 5000,
-//   kg: 1000,
-// }
+const newCar = {
+  km: 5000,
+  kg: 1000,
+}
 
-// showKm(newCar.km)
-// //! O veículo tem a Km de:5000
+showKm(newCar.km)
+//! O veículo tem a Km de:5000
+//....
