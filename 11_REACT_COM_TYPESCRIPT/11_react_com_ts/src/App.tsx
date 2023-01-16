@@ -12,6 +12,10 @@ import SecondComponent from './components/SecondComponent'
 //! useState
 import State from './components/State'
 
+//! type
+type textOrNull = string | null
+type fixed = 'isso' | 'ou' | 'aquilo'
+
 function App() {
   //!variaveis
   const name: string = 'Lucas'
@@ -22,6 +26,14 @@ function App() {
   const userGreeting = (name: string): string => {
     return `Olá ${name}!`
   }
+
+  //! type
+  const myText: textOrNull = 'tem algum texto aqui'
+  let mySecondText: textOrNull = null
+
+  // mySecondText = 'opa'
+
+const testandoFixed:fixed = 'aquilo'
 
   return (
     <div className="App">
@@ -47,6 +59,10 @@ function App() {
         category={Category.P}
       />
       <State />
+      {myText && <p>tem texto na variável {testandoFixed}</p>}
+
+      {mySecondText && <p>tem texto na variável</p>}
+
     </div>
   )
 }
