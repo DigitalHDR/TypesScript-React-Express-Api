@@ -7,6 +7,9 @@ import Destructuring, { Category } from './components/Destructuring'
 //! importando componente
 import FirstComponent from './components/FirstComponent'
 
+//! utilizando contexto
+import Context from './components/Context'
+
 //! desestruturando props
 import SecondComponent from './components/SecondComponent'
 
@@ -80,6 +83,7 @@ function App() {
         {myText && <p>tem texto na variável {testandoFixed}</p>}
 
         {mySecondText && <p>tem texto na variável</p>}
+        <Context />
       </div>
     </AppContext.Provider>
   )
