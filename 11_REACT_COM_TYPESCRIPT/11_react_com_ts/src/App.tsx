@@ -1,15 +1,15 @@
 // import React from 'react'
 // import logo from './logo.svg'
 import './App.css'
-import Destructuring from './components/Destructuring'
+import Destructuring, { Category } from './components/Destructuring'
 
-// importando componente
+//! importando componente
 import FirstComponent from './components/FirstComponent'
 
-// desestruturando props
+//! desestruturando props
 import SecondComponent from './components/SecondComponent'
 
-// useState
+//! useState
 import State from './components/State'
 
 function App() {
@@ -36,13 +36,15 @@ function App() {
         title="Primeiro post 'Destructuring'"
         content="algum contéudo"
         commentSQty={10}
-        tags={['ts','js']}
+        tags={['ts', 'js']}
+        category={Category.TS}
       />
       <Destructuring
         title="Segundo post 'Destructuring'"
         content="mais outro contéudo"
         commentSQty={5}
         tags={['css']}
+        category={Category.P}
       />
       <State />
     </div>
