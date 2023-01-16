@@ -9,6 +9,9 @@ import FirstComponent from './components/FirstComponent'
 // desestruturando props
 import SecondComponent from './components/SecondComponent'
 
+// useState
+import State from './components/State'
+
 function App() {
   //!variaveis
   const name: string = 'Lucas'
@@ -41,6 +44,7 @@ function App() {
         commentSQty={5}
         tags={['css']}
       />
+      <State />
     </div>
   )
 }
