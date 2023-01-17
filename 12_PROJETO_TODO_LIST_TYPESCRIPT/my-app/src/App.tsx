@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 
 import style from './App.module.css'
-import TaslForm from './components/TaslForm'
+import TaslForm from './components/TaskForm'
 import TaskList from './components/TaskList'
 
 function App() {
