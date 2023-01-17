@@ -1,14 +1,26 @@
 // import React from 'react';
 // import logo from './logo.svg';
-import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
+
+import style from './App.module.css'
+import TaslForm from './components/TaslForm'
+import TaskList from './components/TaskList'
 
 function App() {
   return (
     <div>
       <Header />
-      <h1>Conteudo</h1>
+      <main className={style.main}>
+        <div>
+          <h2>O que você vai fazer?</h2>
+          <TaslForm btnText='Criar Tarefa' />
+        </div>
+        <div>
+          <h2>Suas tarefas:</h2>
+          <TaskList />
+        </div>
+      </main>
       <Footer />
     </div>
   )
