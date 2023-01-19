@@ -9,12 +9,21 @@ type Props = {
   btnText: string
   taskList: ITask[]
   setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>
+  task?: ITask | null
 }
 
-const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
+const TaskForm = ({ btnText, taskList, setTaskList, task }: Props) => {
   const [id, setId] = useState<number>(0)
   const [title, setTitle] = useState<string>('')
   const [difficulty, setDifficulty] = useState<number>(0)
+
+  useEffect(() => {
+    if (task) {
+      setId(task.id)
+      setTitle(task.title)
+      setDifficulty(task.difficulty)
+    }
+  }, [task])
 
   const addTaskHandler = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -28,8 +37,7 @@ const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
     setTitle('')
     setDifficulty(0)
 
-    console.log(taskList);
-    
+    console.log(taskList)
   }
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -69,6 +77,5 @@ const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
 }
 
 export default TaskForm
-
 
 // ! >>> isso significa que vai vir esse parametro ou função etc...
