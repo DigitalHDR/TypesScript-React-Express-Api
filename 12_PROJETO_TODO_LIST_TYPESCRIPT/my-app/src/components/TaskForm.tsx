@@ -11,7 +11,7 @@ type Props = {
   setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>
 }
 
-const TaslForm = ({ btnText, taskList, setTaskList }: Props) => {
+const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
   const [id, setId] = useState<number>(0)
   const [title, setTitle] = useState<string>('')
   const [difficulty, setDifficulty] = useState<number>(0)
@@ -68,7 +68,7 @@ const TaslForm = ({ btnText, taskList, setTaskList }: Props) => {
   )
 }
 
-export default TaslForm
+export default TaskForm
 
 
 // ! >>> isso significa que vai vir esse parametro ou função etc...

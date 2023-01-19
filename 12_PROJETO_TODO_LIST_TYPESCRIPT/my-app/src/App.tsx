@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 // import logo from './logo.svg';
+import Modal from './components/Modal'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import TaslForm from './components/TaskForm'
+import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList'
 
 import style from './App.module.css'
@@ -24,11 +25,19 @@ function App() {
 
   return (
     <div>
+      <Modal
+        children={
+          <TaskForm
+            btnText="Editar tarefa"
+            taskList={taskList}
+          />
+        }
+      />
       <Header />
       <main className={style.main}>
         <div>
           <h2>O que você vai fazer?</h2>
-          <TaslForm
+          <TaskForm
             btnText="Criar Tarefa"
             taskList={taskList}
             setTaskList={setTaskList}
