@@ -12,17 +12,31 @@ import { ITask } from './interface/Task'
 function App() {
   const [taskList, setTaskList] = useState<ITask[]>([])
 
+  const deleteTask = (id: number) => {
+    setTaskList(
+      taskList.filter(task => {
+        return task.id !== id
+        // retorna todos os id, diferente do id que quer remover
+        // vai retornar todos menos o que foi removido
+      })
+    )
+  }
+
   return (
     <div>
       <Header />
       <main className={style.main}>
         <div>
           <h2>O que você vai fazer?</h2>
-          <TaslForm btnText="Criar Tarefa" taskList={taskList} setTaskList={setTaskList} />
+          <TaslForm
+            btnText="Criar Tarefa"
+            taskList={taskList}
+            setTaskList={setTaskList}
+          />
         </div>
         <div>
           <h2>Suas tarefas:</h2>
-          <TaskList taskList={taskList} />
+          <TaskList taskList={taskList} handleDelete={deleteTask} />
         </div>
       </main>
       <Footer />
