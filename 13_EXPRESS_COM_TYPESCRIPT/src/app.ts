@@ -67,6 +67,19 @@ app.get('/api/product/:id', (req: Request, res: Response, next) => {
   }
 })
 
+//8 rotas complexas
+app.get(
+  '/api/product/:id/review/:reviewId',
+  (req: Request, res: Response, next) => {
+    console.log(req.params)
+
+    const productId = req.params.id
+    const reviewId = req.params.reviewId
+
+    return res.send(`acessando a review ${reviewId} do product ${productId}`)
+  }
+)
+
 app.listen(3000, () => {
   console.log('app rodando')
 })
