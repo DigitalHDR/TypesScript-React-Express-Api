@@ -3,6 +3,7 @@
 
 //2 init express
 import express, { Request, Response } from 'express'
+import { rmSync } from 'fs'
 
 const app = express()
 
@@ -36,6 +37,16 @@ app.all('/api/product/check', (req, res, next) => {
 //5 interface do express
 app.get('/api/interfaces', (req: Request, res: Response, next) => {
   return res.send('utilizando as interfaces')
+})
+
+//6 enviando json
+app.get('/api/json', (req: Request, res: Response, next) => {
+  return res.json({
+    name: 'shirt',
+    price: 30.0,
+    color: 'blue',
+    sizes: ['p', 'm', 'g'],
+  })
 })
 
 app.listen(3000, () => {
