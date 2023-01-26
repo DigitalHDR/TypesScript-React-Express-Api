@@ -10,6 +10,14 @@ const app = express()
 //3 rota com post
 app.use(express.json())
 
+//11 middleware para todas as rotas
+function showPath(req: Request, res: Response, next: NextFunction) {
+  console.log(req.path)
+  next()
+}
+
+app.use(showPath)
+
 app.get('/', (req, res, next) => {
   return res.send('hello express')
 })
@@ -102,7 +110,7 @@ function checkUser(req: Request, res: Response, next: NextFunction) {
     next()
   } else {
     console.log('acesso restrito')
-    return res.json({memsagem: 'acessoo restrito apenas para admin'})
+    return res.json({ memsagem: 'acessoo restrito apenas para admin' })
   }
 }
 
@@ -117,3 +125,5 @@ app.listen(3000, () => {
 //! requisição é tudo que vir para você
 
 //! resposta é o que você vai enviar como resposta
+
+//! toda função middeware tem que ter a função next()
