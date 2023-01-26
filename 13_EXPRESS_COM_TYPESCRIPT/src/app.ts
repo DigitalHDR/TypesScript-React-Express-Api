@@ -80,6 +80,15 @@ app.get(
   }
 )
 
+//9 router handler
+function getUser(req: Request, res: Response) {
+  console.log(`resgatando o usuário com id: ${req.params.id}`)
+
+  return res.send('o usuario foi encontrado!')
+}
+
+app.get('/api/user/:id', getUser)
+
 app.listen(3000, () => {
   console.log('app rodando')
 })
