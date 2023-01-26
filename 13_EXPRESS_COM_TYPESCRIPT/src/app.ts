@@ -2,7 +2,7 @@
 // console.log('express + ts!!!')
 
 //2 init express
-import express, { Request, Response } from 'express'
+import express, { NextFunction, Request, Response } from 'express'
 import { rmSync } from 'fs'
 
 const app = express()
@@ -35,12 +35,15 @@ app.all('/api/product/check', (req, res, next) => {
 })
 
 //5 interface do express
-app.get('/api/interfaces', (req: Request, res: Response, next) => {
-  return res.send('utilizando as interfaces')
-})
+app.get(
+  '/api/interfaces',
+  (req: Request, res: Response, next: NextFunction) => {
+    return res.send('utilizando as interfaces')
+  }
+)
 
 //6 enviando json
-app.get('/api/json', (req: Request, res: Response, next) => {
+app.get('/api/json', (req: Request, res: Response, next: NextFunction) => {
   return res.json({
     name: 'shirt',
     price: 30.0,
@@ -50,27 +53,30 @@ app.get('/api/json', (req: Request, res: Response, next) => {
 })
 
 //7 router parameters
-app.get('/api/product/:id', (req: Request, res: Response, next) => {
-  console.log(req.params)
+app.get(
+  '/api/product/:id',
+  (req: Request, res: Response, next: NextFunction) => {
+    console.log(req.params)
 
-  const id = req.params.id
+    const id = req.params.id
 
-  if (id === '1') {
-    const product = {
-      id: 1,
-      name: 'bone',
-      price: 10,
+    if (id === '1') {
+      const product = {
+        id: 1,
+        name: 'bone',
+        price: 10,
+      }
+      return res.json(product)
+    } else {
+      return res.send('produto nao encontrado')
     }
-    return res.json(product)
-  } else {
-    return res.send('produto nao encontrado')
   }
-})
+)
 
 //8 rotas complexas
 app.get(
   '/api/product/:id/review/:reviewId',
-  (req: Request, res: Response, next) => {
+  (req: Request, res: Response, next: NextFunction) => {
     console.log(req.params)
 
     const productId = req.params.id
@@ -81,13 +87,28 @@ app.get(
 )
 
 //9 router handler
-function getUser(req: Request, res: Response) {
+function getUser(req: Request, res: Response, next: NextFunction) {
   console.log(`resgatando o usuário com id: ${req.params.id}`)
 
   return res.send('o usuario foi encontrado!')
 }
 
 app.get('/api/user/:id', getUser)
+
+//10 middleware
+function checkUser(req: Request, res: Response, next: NextFunction) {
+  if (req.params.id === '1') {
+    console.log('pode seguir')
+    next()
+  } else {
+    console.log('acesso restrito')
+    return res.json({memsagem: 'acessoo restrito apenas para admin'})
+  }
+}
+
+app.get('/api/user/:id/access', checkUser, (req: Request, res: Response) => {
+  return res.json({ mensagem: 'bem vindo a área administrativa!' })
+})
 
 app.listen(3000, () => {
   console.log('app rodando')
