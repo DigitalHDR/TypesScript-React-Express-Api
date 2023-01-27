@@ -118,6 +118,21 @@ app.get('/api/user/:id/access', checkUser, (req: Request, res: Response) => {
   return res.json({ mensagem: 'bem vindo a área administrativa!' })
 })
 
+//12 req e res com generics
+app.get(
+  '/api/user/:id/details/:name',
+  (
+    req: Request<{ id: string; name: string }>,
+    res: Response<{ status: boolean }>,
+    next: NextFunction
+  ) => {
+    console.log(`id: ${req.params.id}`)
+    console.log(`name: ${req.params.name}`)
+
+    return res.json({ status: true })
+  }
+)
+
 app.listen(3000, () => {
   console.log('app rodando')
 })
