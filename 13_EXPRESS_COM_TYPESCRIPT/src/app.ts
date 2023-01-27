@@ -2,6 +2,7 @@
 // console.log('express + ts!!!')
 
 //2 init express
+import e from 'express'
 import express, { NextFunction, Request, Response } from 'express'
 import { rmSync } from 'fs'
 
@@ -132,6 +133,16 @@ app.get(
     return res.json({ status: true })
   }
 )
+
+//13 tratando erros
+app.get('/api/error', (req: Request, res: Response, next: NextFunction) => {
+  try {
+    //nossa logica
+    throw new Error('algo deu errado!')
+  } catch (e: any) {
+    res.status(500).json({ mgs: e.message })
+  }
+})
 
 app.listen(3000, () => {
   console.log('app rodando')
