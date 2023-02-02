@@ -1,15 +1,20 @@
 import mongoose from 'mongoose'
 import config from 'config'
 
+import Logger from './logger'
+
+mongoose.set('strictQuery', true)
+
 async function connect() {
   const dbUri = config.get<string>('dbUri')
-  console.log('Conectou ao banco de dados!')
+  Logger.info('Conectou ao banco de dados!')
 
   try {
     await mongoose.connect(dbUri)
   } catch (e) {
-    console.log('Não foi possivel conectar!')
-    console.log(`ERRO: ${e}`)
+    Logger.error('Não foi possivel conectar!')
+    Logger.error(`ERRO: ${e}`)
+    process.exit(1)
   }
 }
 

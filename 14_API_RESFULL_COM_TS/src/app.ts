@@ -15,6 +15,9 @@ import db from '../config/db'
 // ROUTES
 import router from './router'
 
+// LOGGER WINSTON
+import Logger from '../config/logger'
+
 app.use('/api/', router)
 
 // APP PORT
@@ -22,5 +25,5 @@ const port = config.get<number>('port')
 
 app.listen(3000, async () => {
   await db()
-  console.log(`Aplicação está funcionando na porta: ${port}`)
+  Logger.info(`Aplicação está funcionando na porta: ${port}`)
 })
