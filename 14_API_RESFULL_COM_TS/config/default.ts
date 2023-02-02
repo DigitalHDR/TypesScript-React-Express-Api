@@ -6,6 +6,3 @@ export default {
   dbUri: `mongodb+srv://${dbUser}:${dbPassword}@cluster0.tn0axsz.mongodb.net/?retryWrites=true&w=majority`,
   env: 'development'
 }
-
-
-// mongodb+srv://lucas:<password>@cluster0.tn0axsz.mongodb.net/?retryWrites=true&w=majority

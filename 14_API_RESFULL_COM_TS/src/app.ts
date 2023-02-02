@@ -18,6 +18,11 @@ import router from './router'
 // LOGGER WINSTON
 import Logger from '../config/logger'
 
+// MIDDLEWERE
+import morganMiddleware from './middlewere/morgonMiddlewere'
+
+app.use(morganMiddleware)
+
 app.use('/api/', router)
 
 // APP PORT
