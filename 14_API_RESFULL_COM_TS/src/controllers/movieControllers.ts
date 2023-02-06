@@ -11,5 +11,11 @@ export async function createMovie(
   res: Response,
   next: NextFunction
 ) {
-    return res.status(200).send('Deu certo o controller')
+    try {
+      const data = req.body
+      const movie = await MovieModel.create(data)
+      return res.status(201).json(movie)
+    } catch (e: any) {
+      Logger.error(`Erro no sistema: ${e.message}`)
+    }
 }
