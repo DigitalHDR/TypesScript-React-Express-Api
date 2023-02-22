@@ -1,0 +1,70 @@
+2023-02-22 13:27:28:2728 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:27:29:2729 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:27:35:2735 - [35mhttp[39m: [35mGET /api/movie/63e133327c43a3b8d9c0d3f3 200 - - 30.988 ms[39m
+[35m[39m
+2023-02-22 13:28:06:286 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:28:06:286 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:07:297 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:07:297 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:10:2910 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:10:2910 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:13:2913 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:14:2914 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:19:2919 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:20:2920 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:22:2922 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:22:2922 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:26:2926 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:26:2926 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:29:2929 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:29:2929 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:34:2934 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:34:2934 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:41:2941 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:42:2942 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:43:2943 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:43:2943 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:55:2955 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:55:2955 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:56:2956 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:56:2956 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:29:57:2957 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:29:58:2958 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:08:308 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:09:309 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:11:3011 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:11:3011 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:20:3020 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:20:3020 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:25:3025 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:25:3025 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:35:3035 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:35:3035 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:37:3037 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:37:3037 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:39:3039 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:39:3039 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:44:3044 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:44:3044 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:47:3047 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:47:3047 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:30:56:3056 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:30:56:3056 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:31:11:3111 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:31:11:3111 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:31:57:3157 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:31:57:3157 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:32:59:3259 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:32:59:3259 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:33:00:330 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:33:01:331 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:33:13:3313 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:33:13:3313 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:33:15:3315 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:33:15:3315 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:33:21:3321 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:33:21:3321 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:33:23:3323 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:33:23:3323 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:34:33:3433 - [35mhttp[39m: [35mGET /api/movie 200 - - 27.957 ms[39m
+[35m[39m
