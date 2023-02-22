@@ -12,7 +12,6 @@ export default router
     res.status(200).send('API WORKING!')
   })
   .post('/movie', movieCreateValidation(), validate, createMovie)
-<<<<<<< HEAD
+
+
   .get('/movie/:id', findMovieById)
-=======
->>>>>>> 743372ae215780da86913f79bfe269b6e4203540
