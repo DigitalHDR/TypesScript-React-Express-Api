@@ -243,3 +243,13 @@
 2023-02-22 13:56:13:5613 - [31merror[39m: [31mErro no sistema: Cannot set headers after they are sent to the client[39m
 2023-02-22 13:56:13:5613 - [35mhttp[39m: [35mDELETE /api/movie/63e6740fcef1b70390a3dcad 500 - - 53.042 ms[39m
 [35m[39m
+2023-02-22 13:56:37:5637 - [32minfo[39m: [32mConectou ao banco de dados![39m
+2023-02-22 13:56:37:5637 - [32minfo[39m: [32mAplicação está funcionando na porta: 3000[39m
+2023-02-22 13:56:42:5642 - [35mhttp[39m: [35mGET /api/movie 200 - - 23.928 ms[39m
+[35m[39m
+2023-02-22 13:56:48:5648 - [35mhttp[39m: [35mPOST /api/movie 201 - - 44.063 ms[39m
+[35m[39m
+2023-02-22 13:57:10:5710 - [35mhttp[39m: [35mGET /api/movie/63f649507458a7b4e15604a5 200 - - 18.573 ms[39m
+[35m[39m
+2023-02-22 13:57:15:5715 - [35mhttp[39m: [35mGET /api/movie 200 - - 14.505 ms[39m
+[35m[39m
