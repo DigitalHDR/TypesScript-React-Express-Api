@@ -13,3 +13,5 @@
 2023-02-10 14:02:16:216 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "63e6740fcef1b70390a3dca" (type string) at path "_id" for model "Movie"[39m
 2023-02-10 14:02:41:241 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "63e6740fcef1b70390a3dca" (type string) at path "_id" for model "Movie"[39m
 2023-02-10 14:03:29:329 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "63e6740fcef1b70390a3dca" (type string) at path "_id" for model "Movie"[39m
+2023-02-22 13:49:56:4956 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "63e130876984f9e6d725763" (type string) at path "_id" for model "Movie"[39m
+2023-02-22 13:56:13:5613 - [31merror[39m: [31mErro no sistema: Cannot set headers after they are sent to the client[39m
