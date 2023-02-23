@@ -4,6 +4,7 @@ import {
   findMovieById,
   getAllMovies,
   removeMovie,
+  updateMovie,
 } from './controllers/movieControllers'
 
 // VALIDATIONS
@@ -20,3 +21,4 @@ export default router
   .get('/movie/:id', findMovieById)
   .get('/movie', getAllMovies)
   .delete('/movie/:id', removeMovie)
+  .patch('/movie/:id', movieCreateValidation(), validate, updateMovie)
